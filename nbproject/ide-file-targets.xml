@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir=".." name="DudutoServer-IDE">
+    <property file="nbproject/nbjdk.properties"/>
+    <property location="${netbeans.user}/build.properties" name="user.properties.file"/>
+    <property file="${user.properties.file}"/>
+    <import file="jdk.xml"/>
+    <!-- TODO: edit the following target according to your needs -->
+    <!-- (more info: http://www.netbeans.org/kb/articles/freeform-config.html#runsingle) -->
+    <target depends="-jdk-init" name="run-selected-file-in-src">
+        <fail unless="run.class">Must set property 'run.class'</fail>
+        <java classname="${run.class}" failonerror="true" fork="true">
+            <classpath>
+                <pathelement path="lib/DBPool_v4.8.3.jar;lib/ElectroServer-5-Java-Client.jar;lib/ElectroServer5.jar;lib/bcpg-jdk16-141.jar;lib/commons-dbcp-1.2.2.jar;lib/commons-pool-1.4.jar;lib/derby.jar;lib/derbyclient.jar;lib/derbynet.jar;lib/derbyrun.jar;lib/derbytools.jar;lib/ezmorph.jar;lib/jdbi-2.2.1.jar;lib/json-org.jar;lib/json_simple-1.1.jar;lib/mysql-connector-java-5.0.4-bin.jar;lib/noggit-1.0-SNAPSHOT.jar;lib/slf4j-api-1.4.3.jar"/>
+            </classpath>
+        </java>
+    </target>
+</project>

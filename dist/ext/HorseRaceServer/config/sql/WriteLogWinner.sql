@@ -1,0 +1,2 @@
+INSERT INTO log_winner(game_id, best_horse, phoneNumber, paid, trans_id, error_code, message, call_from, localDateTime) 
+VALUES (:game_id, :best_horse, :phoneNumber, :paid, :trans_id, :error_code, :message, :call_from, :localDateTime)

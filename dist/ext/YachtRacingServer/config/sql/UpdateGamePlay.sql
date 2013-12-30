@@ -1,0 +1,1 @@
+UPDATE game_play SET  status=:status WHERE game_id=:game_id
